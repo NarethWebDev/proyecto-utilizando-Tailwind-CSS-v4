@@ -10,6 +10,7 @@
 </head>
     
 <body>
+    <main>
     <header class="w-full ">
     <div class=" border-b border-gray-200 hidden md:block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,6 +70,153 @@
     
 </header>
 
+<div class="overflow-hidden rounded-xl relative">
+
+  <div id="carousel" class="flex transition-transform duration-500">
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania1.png"
+        alt="Campaña agrícola sostenible"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+
+
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania2.jfif"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania3.png"
+        alt="Innovación agroindustrial"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania4.png"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania5.jfif"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+  </div>
+
+  <button
+    aria-label="Anterior"
+    onclick="prevSlide()"
+    class="absolute left-4 top-1/2 -translate-y-1/2
+           bg-white/80 p-3 rounded-full text-xl"
+  >
+    ‹
+  </button>
+
+  <button
+    aria-label="Siguiente"
+    onclick="nextSlide()"
+    class="absolute right-4 top-1/2 -translate-y-1/2
+           bg-white/80 p-3 rounded-full text-xl"
+  >
+    ›
+  </button>
+</div>
+
+
+
+
+
+</main>
 
 
 

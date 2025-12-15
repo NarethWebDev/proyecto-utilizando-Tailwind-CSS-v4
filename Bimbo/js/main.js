@@ -105,3 +105,46 @@ historias.addEventListener('click', () => {
 historias.addEventListener('dblclick', () => {
     historiasContenedor.innerHTML = '';
 })
+
+let index = 0
+const carousel = document.getElementById("carousel")
+const totalSlides = carousel.children.length
+let intervalId = null
+
+function showSlide() {
+  carousel.style.transform = `translateX(-${index * 100}%)`
+}
+
+function nextSlide() {
+  index = (index + 1) % totalSlides
+  showSlide()
+  resetInterval()
+}
+
+function prevSlide() {
+  index = (index - 1 + totalSlides) % totalSlides
+  showSlide()
+  resetInterval()
+}
+
+function startAutoSlide() {
+  intervalId = setInterval(() => {
+    index = (index + 1) % totalSlides
+    showSlide()
+  }, 3000)
+}
+
+function resetInterval() {
+  clearInterval(intervalId)
+  startAutoSlide()
+}
+
+startAutoSlide()
+function toggleButtonColor(button) {
+  button.classList.toggle("bg-blue-800")
+  button.classList.toggle("hover:bg-blue-900")
+
+  button.classList.toggle("bg-red-600")
+  button.classList.toggle("hover:bg-red-700")
+}
+
