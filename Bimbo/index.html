@@ -10,6 +10,7 @@
 </head>
     
 <body>
+    <main>
     <header class="w-full ">
     <div class=" border-b border-gray-200 hidden md:block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,6 +70,385 @@
     
 </header>
 
+<div class="overflow-hidden rounded-xl relative">
+
+  <div id="carousel" class="flex transition-transform duration-500">
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania1.png"
+        alt="Campaña agrícola sostenible"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+
+
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania2.jfif"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania3.png"
+        alt="Innovación agroindustrial"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania4.png"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+    <div class="relative w-full flex-shrink-0">
+      <img
+        src="./assets/img/campania5.jfif"
+        alt="Producción responsable"
+        class="w-full object-cover h-[280px] md:h-[500px]"
+      />
+
+      <button 
+        onclick="toggleButtonColor(this)"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2
+                bg-blue-800 text-white font-black
+                px-80 py-6.5
+                text-3xl tracking-widest
+                whitespace-nowrap
+                rounded-2xl
+                hover:bg-blue-900
+                focus:outline focus:outline-2 focus:outline-white
+                transition-all duration-300"
+        >
+        ¡PRUÉBALA AHORA!
+        </button>
+    </div>
+
+  </div>
+
+  <button
+    aria-label="Anterior"
+    onclick="prevSlide()"
+    class="absolute left-4 top-1/2 -translate-y-1/2
+           bg-white/80 p-3 rounded-full text-xl"
+  >
+    ‹
+  </button>
+
+  <button
+    aria-label="Siguiente"
+    onclick="nextSlide()"
+    class="absolute right-4 top-1/2 -translate-y-1/2
+           bg-white/80 p-3 rounded-full text-xl"
+  >
+    ›
+  </button>
+</div>
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+    <!-- CAMPAÑAS -->
+    <article class="bg-blue-700 text-white p-6 relative">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <span class="bg-white text-blue-700 p-2 rounded-full">
+            <i class="fa-solid fa-lightbulb"></i>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-wide">
+            CAMPAÑAS
+          </h2>
+        </div>
+
+        <button
+          class="bg-blue-900 px-5 py-2 rounded-lg font-semibold hover:bg-blue-950 transition"
+        >
+          Ver todos los videos
+        </button>
+      </div>
+
+      <img
+        src="./assets/img/imagen1.png"
+        alt="Campaña Saníssimo"
+        class="rounded-xl w-full object-cover h-64"
+      />
+
+      <p class="mt-4 text-sm">
+        100% de maíz horneado.<br />
+        <span class="font-semibold">#SanissimoSimplementeDelicioso</span>
+      </p>
+    </article>
+
+    <!-- HISTORIAS -->
+    <article class="bg-gray-100 p-8">
+    <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3">
+        <span class="bg-white text-red-600 p-2 rounded-full">
+            <i class="fa-solid fa-book"></i>
+        </span>
+        <h2 class="text-3xl font-extrabold text-red-600 tracking-wide">
+            HISTORIAS
+        </h2>
+        </div>
+
+        <button
+        class="bg-blue-800 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-900 transition"
+        >
+        Descúbrelas
+        </button>
+    </div>
+
+    <!-- Contenido -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-800">
+
+        <div>
+        <h3 class="text-xl font-bold text-blue-800 mb-3">
+            Así comenzó todo
+        </h3>
+
+        <p class="font-bold text-sm text-gray-700 leading-relaxed">
+            Ya son más de 70 años de crecimiento, un sueño que comenzó con unos pocos
+            y que ahora es una realidad: Bimbo® ya es la panificadora más grande del mundo.
+        </p>
+        </div>
+
+        <div>
+        <p class="text-sm leading-relaxed">
+            “Panificación Bimbo®” empezó a operar el 2 de Diciembre de 1945, con solo
+            34 personas que trabajaban en una pequeña planta en la Ciudad de México
+            ubicada en el barrio de Insurgentes de Santa María en la dirección
+            11758 Calle Norte.
+        </p>
+        </div>
+
+    </div>
+    </article>
+
+
+    <!-- EVENTOS -->
+    <article class="bg-red-600 text-white p-6 relative">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <span class="bg-white text-red-600 p-2 rounded-full">
+            <i class="fa-solid fa-calendar-days"></i>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-wide">
+            EVENTOS
+          </h2>
+        </div>
+
+        <button
+          class="bg-blue-900 px-5 py-2 rounded-lg font-semibold hover:bg-blue-950 transition"
+        >
+          Ver todos los eventos
+        </button>
+      </div>
+
+      <img
+        src="./assets/img/Carrera-Bimbo.jpg"
+        alt="Evento Bimbo"
+        class="rounded-xl w-full object-cover h-64"
+      />
+
+      <p class="mt-4 text-sm">
+        Bimbo, como empresa líder mundial, tiene un compromiso con la sociedad…
+      </p>
+    </article>
+
+    <!-- RECETAS -->
+    <article class="bg-blue-900 text-white p-6 relative">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <span class="bg-white text-blue-900 p-2 rounded-full">
+            <i class="fa-solid fa-utensils"></i>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-wide">
+            RECETAS
+          </h2>
+        </div>
+
+        <button
+          class="bg-blue-700 px-5 py-2 rounded-lg font-semibold hover:bg-blue-800 transition"
+        >
+          Anímate a prepararlas
+        </button>
+      </div>
+
+      <img
+        src="./assets/img/receta.webp"
+        alt="Receta Bimbo"
+        class="rounded-xl w-full object-cover h-64"
+      />
+
+      <p class="mt-4 font-semibold">
+        Sándwich de manzana y jamón
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 lg:grid-cols-4 gap-5 items-start">
+
+    <div class="flex flex-col items-center lg:items-start">
+      <img
+        src="./assets/img/oso_callcenter.png"
+        alt="Osito Bimbo atención al cliente"
+        class="w-48 mb-4"
+      />
+
+      <button
+        class="bg-blue-800 text-white font-bold px-8 py-3 rounded-xl hover:bg-blue-900 transition"
+      >
+        Contáctanos
+      </button>
+    </div>
+
+    <div class="lg:col-span-3">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-blue-900 font-semibold">
+
+        <div class="space-y-4">
+          <p>Recetas</p>
+          <hr />
+          <p>Conócenos</p>
+        </div>
+
+        <div class="space-y-4">
+          <p>Historias</p>
+          <hr />
+          <p>Eventos</p>
+        </div>
+
+        <div class="space-y-4">
+          <p>Osito Bimbo®</p>
+          <hr />
+          <p>Proveedores</p>
+        </div>
+
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 mt-10">
+        <img src="./assets/img/facebook.png" alt="Facebook" class="h-6" />
+        <img src="./assets/img/instagram.png" alt="Instagram" class="h-6" />
+        <img src="./assets/img/twitter.png" alt="Twitter" class="h-6" />
+        <img src="./assets/img/youtube.png" alt="YouTube" class="h-6" />
+        <img src="./assets/img/industria.jpg" alt="Industria y Comercio" class="h-6" />
+      </div>
+    </div>
+  </div>
+
+  <a
+    href="#"
+    aria-label="Escríbenos por WhatsApp"
+    class="fixed bottom-6 right-6 z-50
+           w-[280px] h-[80px]
+           bg-no-repeat bg-center bg-contain
+           flex items-center justify-center
+           text-white font-bold
+           hover:scale-105 transition-transform"
+    style="background-image: url('./assets/img/oso_whatsapp.png');"
+  >
+  </a>
+</section>
+
+<footer class="bg-blue-900 text-white">
+  <div
+    class="max-w-7xl mx-auto px-6 py-3
+           flex items-center justify-between
+           text-[13px]"
+  >
+    <p>
+      © Bimbo de Colombia S.A.
+    </p>
+
+    <div class="flex gap-8">
+      <a href="#" class="hover:underline">
+        Contáctanos
+      </a>
+      <a href="#" class="hover:underline">
+        Términos y condiciones
+      </a>
+      <a href="#" class="hover:underline">
+        Política de Tratamiento y Protección de Datos Personales
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+</main>
 
 
 
